@@ -1,0 +1,7 @@
+Hey!
+
+There's something causing a double delete error here.
+
+A double delete occurs when a chunk of memory on the heap gets 'freed' twice.
+
+Make and run the exe first to see what I mean, then read the code. 

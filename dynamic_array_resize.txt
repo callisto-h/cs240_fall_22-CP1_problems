@@ -1,0 +1,6 @@
+Hey!
+
+There's something wrong with our resize functionality. Even though we create a new array 
+of a larger size, only the first value is copied over!
+
+Make and run the exe to see what I mean, then figure out a solution!

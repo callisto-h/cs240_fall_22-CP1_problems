@@ -1,0 +1,31 @@
+Hey!
+
+There's a memory leak in this program. That means that some of the memory on the heap that
+we grab with 'new' doesn't get returned with 'delete'.
+
+The basic structure of this program is a Top object has an array of Middle objects which have arrays
+of Bottom objects which have arrays of ints.
+
+Like so:
+
+Top[
+    Middle[
+        Bottom[
+            int, int, int
+        ]
+        Bottom[
+            int, int, int
+            ]
+    ]
+    Middle[
+        Bottom[
+            int, int, int
+        ]
+        Bottom[
+            int, int, int
+            ]
+    ]
+]
+
+Make and run the exe to see what I mean. To verify the memory leaks, run "valgrind ./executable.exe".
+        
